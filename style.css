@@ -1,0 +1,216 @@
+/* CSS reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* CSS Variables */
+:root{
+    --navbar-height:59px;
+}
+/* navigation bar  */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    /* position: absolute; */
+    top: 0px;
+    width: 100%;
+    height: 82px;
+}
+#navbar::before{
+   content: "";
+   background-color: black; 
+   position: absolute;
+   height: 103%;
+   width: 100%; 
+   top: 0px;
+   left: 0px;
+   z-index: -1;
+   opacity: 0.6;
+}
+
+/* navigation bar: logo and image */
+#logo{
+    margin: 10px 45px;
+    display: contents;
+}
+#logo img{
+    height: 77px; 
+    margin: 34px 6px;
+}
+
+/* navigation bar: list styling */
+#navbar ul{
+    display: flex;
+    font-family: cursive;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    color: white; 
+    display: block;
+    padding: 3px 20px;
+    border-radius: 20px;
+    text-decoration: none;  
+}
+#navbar ul li a:hover{
+    color: black; 
+    background-color: white;
+
+}
+
+/* section home */
+#home{
+display: flex; 
+flex-direction: column; 
+padding: 68px 1px;
+/* height: 550px; */
+height: 257px;
+justify-content: center;
+align-items: center;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    background: url('../img/spaghetti.jpg') no-repeat center center/cover;
+    height: 84%;
+    width: 100%; 
+    top: 0px;
+    left: 0px;
+    z-index: -1;    
+    opacity: 0.8;                   
+}
+#home h1{
+    color: white;
+    font-size: 46px;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+#home p{
+    color: white;
+    font-size: 1.1rem;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+
+/* services section */
+#services{
+    margin:34px;
+    display: flex;
+}
+#services .box{
+    border: 2px solid brown;
+    padding: 34px;
+    margin: -17px 6px;
+    border-radius: 28px;
+    background: #f2f2f2;
+}
+#services .box img{
+    height: 160px;
+    margin: auto;
+    display: block;
+}
+#services .box p{
+    font-family: 'Bree Serif', serif;
+   
+}
+/* client section */
+#client-section{
+    height: 334px;
+}
+#client-section::before{
+   content: ""; 
+   position: absolute;
+   background: url('../img/meal.jpg') no-repeat center/cover;
+   width: 100%;
+   height: 54%;
+   z-index: -1;
+   opacity: 0.5;
+}
+#clients{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+    }
+.clients-item{
+    padding: 24px;
+}
+#clients img{
+    height: 144px;
+    width: 193px;
+}
+   
+/* contact section */
+#contact{
+    position: relative;
+}
+#contact::before{
+  content: "";  
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.7;
+  background: url('../img/telephone-586268.jpg')no-repeat center center/cover;
+}
+#contact-box{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1 rem;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Bree Serif', serif;
+}
+
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 5px 20px;
+}
+
+/* utility classes */
+.primary{
+    font-size: 2.8rem;
+    padding: 12px;
+}
+.secondary{
+    font-size: 2.3rem;
+    padding: 12px;
+    /* margin-top: -155px; */
+    margin-top: 41px;
+}
+.btn{
+    margin: 10px;
+    padding: 6px 20px;
+    background-color: rgb(182 92 92); 
+    border: 2px solid white;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 1px 1px 3px rgb(182 92 92), -1px -1px 3px rgb(182 92 92);   
+    font-size: 1.5rem;
+    cursor: pointer;
+}   
+.center{
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+
+

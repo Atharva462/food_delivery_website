@@ -1,0 +1,42 @@
+/* Navigation */
+#navbar {
+    flex-direction: column;
+    height: 210%
+}
+
+#services .box { 
+    padding: 14px;
+    margin: 2px 0px; 
+    margin-bottom: 20px;
+}
+
+/* Clients section */
+#clients{
+    flex-wrap: wrap;
+}
+
+#clients img{
+    height: 52%;
+    width: 66px;
+    padding: 6px;
+    height: auto;
+    overflow: hidden;
+}
+
+/* Contact us section */
+#contact-box form{
+    width:80%;
+}
+/* Footer */
+
+/* Utility classes */
+.primary{
+    font-size:13px;
+}
+.secondary{
+    margin-top: -64px;
+}
+.btn{
+    font-size: 13px;
+    padding: 4px 8px;
+}
